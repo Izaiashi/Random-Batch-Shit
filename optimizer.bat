@@ -18,9 +18,14 @@ echo             888                                                By Izaiashi
 echo.
 
 ::Updater
+echo ---------------------------------------------------------------------------
+echo                                  Updating
+echo.
 set "filePath=%~f0"
 copy "%filePath%" "%filePath%.old"
 curl "https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shit/main/optimizer.bat" -o "%filePath%"
+echo.
+echo ---------------------------------------------------------------------------
 
 
 ::Installer
@@ -33,7 +38,7 @@ if not exist optimizer-api.bat (
 	
 	if %installer% == Y (
 		echo Writing optimizer-api.bat...
-		curl "https://github.com/Izaiashi/Random-Batch-Shit/blob/main/optimizer-api.bat" -o "%filePath%"
+		curl "https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shit/main/optimizer-api.bat" -o "optimizer-api.bat"
     echo Done
     echo Restart optimizer.bat after closing
     echo.
