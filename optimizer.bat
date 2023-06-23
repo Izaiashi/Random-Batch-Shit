@@ -41,15 +41,17 @@ if not exist optimizer-api.bat (
     		pause
   	)
 
-) else (
-    echo ---------------------------------------------------------------------------
-    echo.
-    echo 1 - Delete Telemetry
-    echo 2 - Remove Potential Issues
-    echo 3 - Remove unecessary/rarely used Apps
-    echo 4 - Do all (recommended)
-    set /p option=Choose: 
-    echo.
-    echo ---------------------------------------------------------------------------
+) 
+else (
+	echo ---------------------------------------------------------------------------
+	echo.
+	echo 1 - Delete Telemetry
+	echo 2 - Remove Potential Issues
+	echo 3 - Remove unecessary/rarely used Apps
+	echo 4 - Do all (recommended)
+	set /p option=Choose: 
+	echo.
+	echo ---------------------------------------------------------------------------
 )
+
 pause
