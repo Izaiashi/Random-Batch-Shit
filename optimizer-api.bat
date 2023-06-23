@@ -1,7 +1,7 @@
 ::Updater
 set "filePath=%~f0"
 copy "%filePath%" "%filePath%.old"
-curl "https://pastebin.com/raw/AWw0idyG" -o "%filePath%"
+curl "https://github.com/Izaiashi/Random-Batch-Shit/blob/main/optimizer-api.bat" -o "%filePath%"
 
 ::Loops
 
