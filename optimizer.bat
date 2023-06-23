@@ -20,7 +20,7 @@ echo.
 ::Updater
 set "filePath=%~f0"
 copy "%filePath%" "%filePath%.old"
-curl "https://github.com/Izaiashi/Random-Batch-Shit/blob/main/optimizer.bat" -o "%filePath%"
+curl "https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shit/main/optimizer.bat" -o "%filePath%"
 
 
 ::Installer
