@@ -28,6 +28,7 @@ echo.
 echo ---------------------------------------------------------------------------
 
 timeout 3 > NUL
+clear
 
 ::Installer
 if not exist optimizer-api.bat (
