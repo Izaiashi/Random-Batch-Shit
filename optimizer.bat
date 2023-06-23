@@ -20,6 +20,12 @@ echo.
 
 ::Updater
 
+if "optimizer.bat" == "curl https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shit/main/optimizer.bat" (
+
+	timeout 2 > NUL
+	cls
+) 
+
 else (
 
 	echo ---------------------------------------------------------------------------
@@ -66,6 +72,7 @@ if not exist "optimizer-api.bat" (
   	)
 
 ) 
+
 else (
 	echo ---------------------------------------------------------------------------
 	echo.
