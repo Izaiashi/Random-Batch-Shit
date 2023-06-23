@@ -18,14 +18,14 @@ echo             888                                                By Izaiashi
 echo.
 
 ::Installer
-if not exist optimizer-api.bat (
+if not exist "optimizer-api.bat" (
 	echo ---------------------------------------------------------------------------
 	echo                               Installation
 	echo.
 	echo Do you wish to continue?
 	set /p installer=Y/n: 
 	
-	if %installer% == Y (
+	if "%installer%" == "Y" (
 		echo Writing optimizer-api.bat...
 		curl "https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shit/main/optimizer-api.bat" -o "optimizer-api.bat"
     		echo Done
