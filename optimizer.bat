@@ -1,5 +1,6 @@
 @echo off
 color D
+title Optimizer.bat - By Izaiashi
 
 ::Header
 echo.
