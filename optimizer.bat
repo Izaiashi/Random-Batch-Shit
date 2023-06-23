@@ -20,7 +20,6 @@ echo.
 
 ::Updater
 
-set "filePath=%~f0"
 if "optimizer.bat" == "curl https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shit/main/optimizer.bat" (
 
 	timeout 2 > NUL
@@ -31,6 +30,7 @@ else (
 	echo ---------------------------------------------------------------------------
 	echo                                  Updating
 	echo.
+	set "filePath=%~f0"
 	copy "%filePath%" "%filePath%.old"
 	curl "https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shit/main/optimizer.bat" -o "%filePath%"
 	echo.
