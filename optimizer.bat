@@ -3,6 +3,7 @@ color D
 title Optimizer.bat - By Izaiashi
 
 ::Header
+
 echo.
 echo  .d88888b.           888    d8b               d8b                           
 echo d88P" "Y88b          888    Y8P               Y8P                           
@@ -18,6 +19,7 @@ echo             888                                                By Izaiashi
 echo.
 
 ::Updater
+
 set "filePath=%~f0"
 if "optimizer.bat" == "curl https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shit/main/optimizer.bat" (
 
@@ -42,6 +44,7 @@ else (
 
 
 ::Installer
+
 if not exist "optimizer-api.bat" (
 	echo ---------------------------------------------------------------------------
 	echo                               Installation
