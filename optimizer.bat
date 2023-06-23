@@ -19,7 +19,7 @@ echo.
 
 ::Updater
 set "filePath=%~f0"
-set "github=curl https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shit/main/optimizer.bat"
+for /F %%G in ('curl https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shit/main/optimizer.bat') do set github=%%G
 if "%filePath%" == "%github%" (
 
 	timeout 2 > NUL
