@@ -23,7 +23,7 @@ for /F %%G in ('curl https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shi
 if "optimizer.bat" == "%github%" (
 
 	timeout 2 > NUL
-	clear
+	cls
 ) 
 else (
 
@@ -80,5 +80,3 @@ else (
 	echo.
 	echo ---------------------------------------------------------------------------
 )
-
-pause
