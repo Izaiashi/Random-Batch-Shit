@@ -36,7 +36,9 @@ else (
 	echo ---------------------------------------------------------------------------
 	echo.
 	echo Restart optimizer.bat after closing
-	pause
+
+	timeout 3 > NUL
+	exit
 )
 
 
@@ -56,12 +58,14 @@ if not exist "optimizer-api.bat" (
     		echo.
     		echo ---------------------------------------------------------------------------
     		echo.
-    		pause    
+    		timeout 3 > NUL
+		exit
 	) else (
     		echo.
     		echo ---------------------------------------------------------------------------
     		echo.
-    		pause
+    		timeout 3 > NUL
+		exit
   	)
 
 ) 
