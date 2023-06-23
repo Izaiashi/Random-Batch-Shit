@@ -4,7 +4,7 @@ for /F %%G in ('curl https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shi
 if "%filePath%" == "%github%" (
 
 	timeout 2 > NUL
-	clear
+	cls
 ) 
 else (
 
