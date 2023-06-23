@@ -27,6 +27,7 @@ curl "https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shit/main/optimize
 echo.
 echo ---------------------------------------------------------------------------
 
+timeout 3 > NUL
 
 ::Installer
 if not exist optimizer-api.bat (
@@ -39,20 +40,18 @@ if not exist optimizer-api.bat (
 	if %installer% == Y (
 		echo Writing optimizer-api.bat...
 		curl "https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shit/main/optimizer-api.bat" -o "optimizer-api.bat"
-    echo Done
-    echo Restart optimizer.bat after closing
-    echo.
-    echo ---------------------------------------------------------------------------
-    echo.
-    pause
-    
-	)
-  else (
-    echo.
-    echo ---------------------------------------------------------------------------
-    echo.
-    pause
-  )
+    		echo Done
+    		echo Restart optimizer.bat after closing
+    		echo.
+    		echo ---------------------------------------------------------------------------
+    		echo.
+    		pause    
+	) else (
+    		echo.
+    		echo ---------------------------------------------------------------------------
+    		echo.
+    		pause
+  	)
 
 ) else (
     echo ---------------------------------------------------------------------------
