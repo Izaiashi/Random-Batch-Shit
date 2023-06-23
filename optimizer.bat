@@ -27,7 +27,7 @@ curl "https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shit/main/optimize
 echo.
 echo ---------------------------------------------------------------------------
 
-timeout 3 > NUL
+timeout 2 > NUL
 clear
 
 ::Installer
