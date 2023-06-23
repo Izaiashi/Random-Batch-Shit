@@ -1,7 +1,6 @@
 @echo off
 color D
 title Optimizer.bat - By Izaiashi
-set "VERSION = 1.0.0"
 
 ::Header
 echo.
@@ -53,3 +52,4 @@ if not exist optimizer-api.bat (
     echo.
     echo ---------------------------------------------------------------------------
 )
+pause
