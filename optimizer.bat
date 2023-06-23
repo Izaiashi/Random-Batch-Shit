@@ -1,6 +1,7 @@
 @echo off
 color D
 title Optimizer.bat - By Izaiashi
+set "VERSION = 1.0.0"
 
 ::Header
 echo.
@@ -18,17 +19,25 @@ echo             888                                                By Izaiashi
 echo.
 
 ::Updater
-echo ---------------------------------------------------------------------------
-echo                                  Updating
-echo.
 set "filePath=%~f0"
-copy "%filePath%" "%filePath%.old"
-curl "https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shit/main/optimizer.bat" -o "%filePath%"
-echo.
-echo ---------------------------------------------------------------------------
+set "github=curl https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shit/main/optimizer.bat"
+if not %filePath% == %github% (
 
-timeout 2 > NUL
-clear
+	echo ---------------------------------------------------------------------------
+	echo                                  Updating
+	echo.
+	copy "%filePath%" "%filePath%.old"
+	curl "https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shit/main/optimizer.bat" -o "%filePath%"
+	echo.
+	echo ---------------------------------------------------------------------------
+	echo.
+	echo Restart optimizer.bat after closing
+	pause
+)
+else (
+	timeout 2 > NUL
+	clear
+)
 
 ::Installer
 if not exist optimizer-api.bat (
