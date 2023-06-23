@@ -21,7 +21,11 @@ echo.
 ::Updater
 set "filePath=%~f0"
 set "github=curl https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shit/main/optimizer.bat"
-if not %filePath% == %github% (
+if %filePath% == %github% (
+
+	timeout 2 > NUL
+	clear
+) else (
 
 	echo ---------------------------------------------------------------------------
 	echo                                  Updating
@@ -33,9 +37,6 @@ if not %filePath% == %github% (
 	echo.
 	echo Restart optimizer.bat after closing
 	pause
-) else (
-	timeout 2 > NUL
-	clear
 )
 
 ::Installer
