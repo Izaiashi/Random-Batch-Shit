@@ -33,8 +33,7 @@ if not %filePath% == %github% (
 	echo.
 	echo Restart optimizer.bat after closing
 	pause
-)
-else (
+) else (
 	timeout 2 > NUL
 	clear
 )
@@ -56,16 +55,14 @@ if not exist optimizer-api.bat (
     		echo ---------------------------------------------------------------------------
     		echo.
     		pause    
-	) 
-	else (
+	) else (
     		echo.
     		echo ---------------------------------------------------------------------------
     		echo.
     		pause
   	)
 
-) 
-else (
+) else (
     echo ---------------------------------------------------------------------------
     echo.
     echo 1 - Delete Telemetry
