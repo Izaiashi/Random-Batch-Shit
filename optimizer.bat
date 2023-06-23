@@ -18,27 +18,6 @@ echo             888
 echo             888                                                By Izaiashi
 echo.
 
-::Updater
-set "filePath=%~f0"
-set "github=curl https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shit/main/optimizer.bat"
-if %filePath% == %github% (
-
-	timeout 2 > NUL
-	clear
-) else (
-
-	echo ---------------------------------------------------------------------------
-	echo                                  Updating
-	echo.
-	copy "%filePath%" "%filePath%.old"
-	curl "https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shit/main/optimizer.bat" -o "%filePath%"
-	echo.
-	echo ---------------------------------------------------------------------------
-	echo.
-	echo Restart optimizer.bat after closing
-	pause
-)
-
 ::Installer
 if not exist optimizer-api.bat (
 	echo ---------------------------------------------------------------------------
