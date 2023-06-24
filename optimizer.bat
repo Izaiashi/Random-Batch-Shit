@@ -56,7 +56,7 @@ if not exist "optimizer-api.bat" (
     		echo.
     		echo ---------------------------------------------------------------------------
     		echo.
-    		timeout 3 > NUL
+    		timeout 1 > NUL
 		exit
   	)
 
