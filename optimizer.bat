@@ -45,7 +45,7 @@ REM Functions
 	echo.
 	echo Do you wish to continue?
 	set /p install=Y/n: 
-	if "%install%" == "Y" (
+	if %install% == "Y" (
 	
 	echo Writing optimizer-api.bat...
 	curl "https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shit/main/optimizer-api.bat" -o "optimizer-api.bat"
@@ -75,5 +75,21 @@ REM Functions
     echo ---------------------------------------------------------------------------
     echo.
     set /p menu=: 
+	
+	if %menu% == "1" (
+		start "" optimizer-api.bat ::telemetry
+	)
+		
+	if %menu% == "2" (
+		start "" optimizer-api.bat ::issues
+	)
+	
+	if %menu% == "3" (
+		start "" optimizer-api.bat ::apps
+	)
+
+	if %menu% == "4" (
+		start "" optimizer-api.bat ::all
+	)
 
 pause
