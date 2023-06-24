@@ -42,7 +42,7 @@ if not exist "optimizer-api.bat" (
 	echo Do you wish to continue?
 	set /p installer=Y/n: 
 	
-	if "%installer%" == "Y" (
+	if %installer% == "Y" (
 		echo Writing optimizer-api.bat...
 		curl "https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shit/main/optimizer-api.bat" -o "optimizer-api.bat"
     		echo Done
