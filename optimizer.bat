@@ -45,23 +45,27 @@ REM Functions
 	echo.
 	echo Do you wish to continue?
 	set /p install=Y/n: 
+	
 	if %install% == "Y" (
 	
-	echo Writing optimizer-api.bat...
-	curl "https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shit/main/optimizer-api.bat" -o "optimizer-api.bat"
-	echo.
-	echo Restart optimizer.bat after closing
-	echo.
-	echo ---------------------------------------------------------------------------
-	echo.
-	timeout 3 > NUL
-	exit
+		echo Writing optimizer-api.bat...
+		curl "https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shit/main/optimizer-api.bat" -o "optimizer-api.bat"
+		echo.
+		echo Restart optimizer.bat after closing
+		echo.
+		echo ---------------------------------------------------------------------------
+		echo.
+		timeout 3 > NUL
+		exit
+		
 	) else (
-	echo.
-	echo ---------------------------------------------------------------------------
-	echo.
-	timeout 3 > NUL
-	exit
+	
+		echo.
+		echo ---------------------------------------------------------------------------
+		echo.
+		timeout 3 > NUL
+		exit
+		
 	)
 
 :menu
