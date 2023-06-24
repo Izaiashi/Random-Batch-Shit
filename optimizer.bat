@@ -2,7 +2,7 @@
 color D
 title Optimizer.bat - By Izaiashi
 
-::Header
+REM Header
 
 echo.
 echo  .d88888b.           888    d8b               d8b                           
@@ -18,7 +18,7 @@ echo             888
 echo             888                                                By Izaiashi
 echo.
 
-::Updater
+REM Updater
 
 echo ---------------------------------------------------------------------------
 echo                                  Updating
@@ -33,43 +33,47 @@ echo.
 timeout 2 > NUL
 cls
 
-::Installer
+REM Installer
 
-if not exist "optimizer-api.bat" (
+if not exist "optimizer-api.bat" (goto :installer) else (goto :menu)
+
+REM Functions
+
+:installer
 	echo ---------------------------------------------------------------------------
 	echo                               Installation
 	echo.
 	echo Do you wish to continue?
-	set /p installer=Y/n: 
+	set /p install=Y/n: 
+	if "%install%" == "Y" (
 	
-	if %installer% == "Y" (
-		echo Writing optimizer-api.bat...
-		curl "https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shit/main/optimizer-api.bat" -o "optimizer-api.bat"
-    		echo Done
-    		echo Restart optimizer.bat after closing
-    		echo.
-    		echo ---------------------------------------------------------------------------
-    		echo.
-    		timeout 3 > NUL
-		exit
+	echo Writing optimizer-api.bat...
+	curl "https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shit/main/optimizer-api.bat" -o "optimizer-api.bat"
+	echo.
+	echo Restart optimizer.bat after closing
+	echo.
+	echo ---------------------------------------------------------------------------
+	echo.
+	timeout 3 > NUL
+	exit
 	) else (
-    		echo.
-    		echo ---------------------------------------------------------------------------
-    		echo.
-    		timeout 1 > NUL
-		exit
-  	)
-
-) 
-
-else (
-	echo ---------------------------------------------------------------------------
-	echo.
-	echo 1 - Delete Telemetry
-	echo 2 - Remove Potential Issues
-	echo 3 - Remove unecessary/rarely used Apps
-	echo 4 - Do all (recommended)
-	set /p option=Choose: 
 	echo.
 	echo ---------------------------------------------------------------------------
-)
+	echo.
+	timeout 3 > NUL
+	exit
+	)
+
+:menu
+    echo ---------------------------------------------------------------------------
+    echo.
+    echo 1 - Delete Telemetry
+    echo 2 - Remove Potential Issues
+    echo 3 - Remove unecessary/rarely used Apps
+    echo 4 - Do all (recommended)
+    echo.
+    echo ---------------------------------------------------------------------------
+    echo.
+    set /p menu=: 
+
+pause
