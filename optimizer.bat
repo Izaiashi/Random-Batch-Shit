@@ -39,6 +39,7 @@ if not exist "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\OPTIM
 REM Functions
 
 :installer
+	del "downloader.bat"
 	echo ---------------------------------------------------------------------------
 	echo                               Installation
 	echo.
