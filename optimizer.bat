@@ -34,7 +34,7 @@ cls
 
 REM Installer
 
-if not exist "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\optimizer-api.bat" (goto :installer) else (goto :menu)
+if not exist "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\OPTIMIZER_API.bat" (goto :installer) else (goto :menu)
 
 REM Functions
 
@@ -47,8 +47,8 @@ REM Functions
 	
 	if /i %install% == Y (
 	
-		echo Writing optimizer-api.bat...
-		curl "https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shit/main/optimizer-api-source.bat" -o "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\optimizer-api.bat"
+		echo Writing OPTIMIZER_API.bat...
+		curl "https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shit/main/OPTIMIZER_API.bat" -o "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\OPTIMIZER_API.bat"
 		echo.
 		echo Restart optimizer.bat after closing
 		echo.
@@ -68,7 +68,7 @@ REM Functions
 	)
 
 :menu
-    set "optimizer-api=C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\optimizer-api.bat"
+    set OPTIMIZER_API="C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\OPTIMIZER_API.bat"
     echo ---------------------------------------------------------------------------
     echo.
     echo 1 - Delete Telemetry
@@ -81,13 +81,13 @@ REM Functions
     set /p menu=: 
 	
 	if %menu% == 1 (
-		start "" %optimizer-api%
+		start "" %OPTIMIZER_API%
 	)else if %menu% == 2 (
-		start "" %optimizer-api%
+		start "" %OPTIMIZER_API%
 	) else if %menu% == 3 (
-		start "" %optimizer-api%
+		start "" %OPTIMIZER_API%
 	) else if %menu% == 4 (
-		start "" %optimizer-api%
+		start "" %OPTIMIZER_API%
 	) else (
 		echo Wrong option
 	)
