@@ -48,7 +48,7 @@ REM Functions
 	if /i %install% == Y (
 	
 		echo Writing optimizer-api.bat...
-		curl "https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shit/main/optimizer-api.bat" -o "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\optimizer-api.bat"
+		curl "https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shit/main/optimizer-api-source.bat" -o "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\optimizer-api.bat"
 		echo.
 		echo Restart optimizer.bat after closing
 		echo.
