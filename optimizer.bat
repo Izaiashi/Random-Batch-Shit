@@ -68,6 +68,7 @@ REM Functions
 	)
 
 :menu
+    set "optimizer-api=C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\optimizer-api-source.bat"
     echo ---------------------------------------------------------------------------
     echo.
     echo 1 - Delete Telemetry
@@ -80,13 +81,13 @@ REM Functions
     set /p menu=: 
 	
 	if %menu% == 1 (
-		start "" C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\optimizer-api.bat
+		start "" %optimizer-api%
 	)else if %menu% == 2 (
-		start "" C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\optimizer-api.bat
+		start "" %optimizer-api%
 	) else if %menu% == 3 (
-		start "" C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\optimizer-api.bat
+		start "" %optimizer-api%
 	) else if %menu% == 4 (
-		start "" C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\optimizer-api.bat
+		start "" %optimizer-api%
 	) else (
 		echo Wrong option
 	)
