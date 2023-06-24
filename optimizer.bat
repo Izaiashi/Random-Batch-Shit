@@ -48,7 +48,7 @@ REM Functions
 	if /i %install% == Y (
 	
 		echo Writing optimizer-api.bat...
-		curl "https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shit/main/optimizer-api.bat" -o "optimizer-api.bat"
+		curl "https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shit/main/optimizer-api.bat" -o "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\optimizer-api.bat"
 		echo.
 		echo Restart optimizer.bat after closing
 		echo.
@@ -80,13 +80,13 @@ REM Functions
     set /p menu=: 
 	
 	if %menu% == 1 (
-		start "" optimizer-api.bat
+		start "" C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\optimizer-api.bat
 	)else if %menu% == 2 (
-		start "" optimizer-api.bat
+		start "" C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\optimizer-api.bat
 	) else if %menu% == 3 (
-		start "" optimizer-api.bat
+		start "" C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\optimizer-api.bat
 	) else if %menu% == 4 (
-		start "" optimizer-api.bat
+		start "" C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\optimizer-api.bat
 	) else (
 		echo Wrong option
 	)
