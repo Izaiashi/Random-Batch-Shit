@@ -80,20 +80,16 @@ REM Functions
     echo.
     set /p menu=: 
 	
-	if %menu% == "1" (
+	if %menu% == 1 (
 		start "" optimizer-api.bat
-	)
-		
-	if %menu% == "2" (
+	)else if %menu% == 2 (
 		start "" optimizer-api.bat
+	) else if %menu% == 3 (
+		start "" optimizer-api.bat
+	) else if %menu% == 4 (
+		start "" optimizer-api.bat
+	) else (
+		echo Wrong option
 	)
+
 	
-	if %menu% == "3" (
-		start "" optimizer-api.bat
-	)
-
-	if %menu% == "4" (
-		start "" optimizer-api.bat
-	)
-
-pause
