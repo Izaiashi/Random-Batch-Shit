@@ -20,29 +20,18 @@ echo.
 
 ::Updater
 
-if "optimizer.bat" == "curl https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shit/main/optimizer.bat" (
+echo ---------------------------------------------------------------------------
+echo                                  Updating
+echo.
+set "filePath=%~f0"
+copy "%filePath%" "%filePath%.old"
+curl "https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shit/main/optimizer.bat" -o "%filePath%"
+echo.
+echo ---------------------------------------------------------------------------
+echo.
 
-	timeout 2 > NUL
-	cls
-) 
-
-else (
-
-	echo ---------------------------------------------------------------------------
-	echo                                  Updating
-	echo.
-	set "filePath=%~f0"
-	copy "%filePath%" "%filePath%.old"
-	curl "https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shit/main/optimizer.bat" -o "%filePath%"
-	echo.
-	echo ---------------------------------------------------------------------------
-	echo.
-	echo Restart optimizer.bat after closing
-
-	timeout 3 > NUL
-	exit
-)
-
+timeout 2 > NUL
+cls
 
 ::Installer
 
