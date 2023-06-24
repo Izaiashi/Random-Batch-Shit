@@ -46,7 +46,7 @@ REM Functions
 	echo Do you wish to continue?
 	set /p install=Y/n: 
 	
-	if %install% == "Y" (
+	if %install% == Y (
 	
 		echo Writing optimizer-api.bat...
 		curl "https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shit/main/optimizer-api.bat" -o "optimizer-api.bat"
