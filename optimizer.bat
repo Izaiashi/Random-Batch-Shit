@@ -68,7 +68,7 @@ REM Functions
 	)
 
 :menu
-    set "optimizer-api=C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\optimizer-api-source.bat"
+    set "optimizer-api=C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\optimizer-api.bat"
     echo ---------------------------------------------------------------------------
     echo.
     echo 1 - Delete Telemetry
