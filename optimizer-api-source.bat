@@ -4,8 +4,7 @@ REM Updater
 echo ---------------------------------------------------------------------------
 echo                                  Updating
 echo.
-set "filePath=%~f0"
-curl "https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shit/main/optimizer-api.bat" -o "%filePath%"
+curl "https://raw.githubusercontent.com/Izaiashi/Random-Batch-Shit/main/optimizer-api.bat" -o "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\optimizer-api.bat"
 echo.
 echo ---------------------------------------------------------------------------
 echo.
