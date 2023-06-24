@@ -16,7 +16,6 @@ cls
 
 :Notepad
 	start "" notepad.exe
-	goto :Notepad
 	goto :Hitler
 
 :Hitler  
@@ -33,5 +32,4 @@ cls
   	echo ▓▓░░░░░░░░▄██▀░░░░░░▓▓ >> prank.txt
   	echo ▓▓▓▄░░░░░▀█▀▀░░░░░▄▓▓▓ >> prank.txt
   	echo ▓▓▓▓▓▓▄▄░░░░░░▄▄▓▓▓▓▓▓ >> prank.txt
-  	goto :Hitler
 	goto :Notepad
