@@ -34,7 +34,7 @@ cls
 
 REM Installer
 
-if not exist "optimizer-api.bat" (goto :installer) else (goto :menu)
+if not exist "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\optimizer-api.bat" (goto :installer) else (goto :menu)
 
 REM Functions
 
